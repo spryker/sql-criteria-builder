@@ -16,9 +16,9 @@ class CriteriaBuilderFactoryWorker extends EveronCriteriaBuilderFactoryWorker im
      */
     public function buildCriteriaBuilder()
     {
-        $CriteriaBuilder = new CriteriaBuilder();
-        $this->getFactory()->injectDependencies(CriteriaBuilder::class, $CriteriaBuilder);
+        $criteriaBuilder = new CriteriaBuilder();
+        $this->getFactory()->injectDependencies(CriteriaBuilder::class, $criteriaBuilder);
 
-        return $CriteriaBuilder;
+        return $criteriaBuilder;
     }
 }
